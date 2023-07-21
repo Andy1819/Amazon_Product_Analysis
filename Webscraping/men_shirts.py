@@ -1,7 +1,7 @@
 import csv
 from bs4 import BeautifulSoup
 
-with open('./Webscrapping/index1.html', 'r',encoding='utf-8') as file:
+with open('./Webscraping/index1.html', 'r',encoding='utf-8') as file:
     html_content = file.read()
 
 soup = BeautifulSoup(html_content, 'html.parser')
