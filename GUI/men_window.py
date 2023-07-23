@@ -1,8 +1,6 @@
 from tkinter import *
 import tkinter as tk
-# from tkinter import Canvas, Label, Listbox, Scrollbar, ttk, font
 from PIL import ImageTk,Image
-# from typing import Text
 
 from scipy.ndimage.measurements import label
 from Graph import men_pd
@@ -13,7 +11,7 @@ def button_clicked(index,men):
     elif(index==1):
         return men_pd.show_graph(men,index)
     elif(index==2):
-        return 1
+        return men_pd.show_graph(men,index)
 
 def MenNotebook(men):
     men.pack(expand=True)
