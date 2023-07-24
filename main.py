@@ -1,12 +1,12 @@
 from tkinter import *
 import tkinter as tk
-from tkinter import Canvas, Label, Listbox, Scrollbar, ttk, font
+from tkinter import ttk, font
 from PIL import ImageTk,Image
-# from typing import Text
 
 from scipy.ndimage.measurements import label
 
 from GUI import men_window
+from GUI import women_window
 
 def Home(notebook):
     mainFrame=Frame(notebook,bg='black')
@@ -31,14 +31,7 @@ def Women(notebook):
     womenFrame=Frame(notebook)
     notebook.add(womenFrame,text='Women')
     women=ttk.Notebook(womenFrame)
-    # women_shirts.MenNotebook(women)
-
-def Kid(notebook):
-    kidFrame=Frame(notebook)
-    notebook.add(kidFrame,text='Kids')
-    kid=ttk.Notebook(kidFrame)
-    # kid_shirts.MenNotebook(kid)
-
+    women_window.WomenNotebook(women)
 
 def main():
     win=tk.Tk()
@@ -87,7 +80,6 @@ def main():
     Home(notebook)
     Men(notebook)
     Women(notebook)
-    Kid(notebook)
 
     win.mainloop()
 
