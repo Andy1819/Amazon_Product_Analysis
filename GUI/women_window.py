@@ -18,9 +18,9 @@ def WomenNotebook(women):
 
     labels = []
     buttons = []
-    list=["Kurtis","Kurtis","Kurtis"]
+    list=["Kurtis","Sarees","Kurtis"]
 
-    image_paths = ["./images/women_kurti.webp","./images/women_kurti.webp","./images/women_kurti.webp"]
+    image_paths = ["./images/women_kurti.webp","./images/women_saree.jpg","./images/women_kurti.webp"]
     images = [Image.open(path).resize((400,400)) for path in image_paths]
     photo_images = [ImageTk.PhotoImage(image) for image in images]
 
