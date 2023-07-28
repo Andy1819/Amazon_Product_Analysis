@@ -4,7 +4,7 @@ import seaborn as sns
 from wordcloud import WordCloud
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-product_type_dataset = ["data_kurti.csv","data_kurti.csv","data_kurti.csv"]
+product_type_dataset = ["data_kurti.csv","data_saree.csv","data_kurti.csv"]
 def convert_to_dataframe(index):
     data = pd.read_csv('./datasets/' + product_type_dataset[index],error_bad_lines=False)
     data['Rating']=pd.to_numeric(data['Rating'],errors='coerce')
