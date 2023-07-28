@@ -9,7 +9,7 @@ def button_clicked(index,women):
     if(index==0):
         return women_pd.show_graph(women,index)
     elif(index==1):
-        return 1
+        return women_pd.show_graph(women,index)
     elif(index==2):
         return 1
 
