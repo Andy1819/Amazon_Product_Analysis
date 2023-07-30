@@ -11,16 +11,16 @@ def button_clicked(index,women):
     elif(index==1):
         return women_pd.show_graph(women,index)
     elif(index==2):
-        return 1
+        return women_pd.show_graph(women,index)
 
 def WomenNotebook(women):
     women.pack(expand=True)
 
     labels = []
     buttons = []
-    list=["Kurtis","Sarees","Kurtis"]
+    list=["Kurtis","Sarees","Jeans"]
 
-    image_paths = ["./images/women_kurti.webp","./images/women_saree.jpg","./images/women_kurti.webp"]
+    image_paths = ["./images/women_kurti.webp","./images/women_saree.jpg","./images/women_jeans.webp"]
     images = [Image.open(path).resize((400,400)) for path in image_paths]
     photo_images = [ImageTk.PhotoImage(image) for image in images]
 
