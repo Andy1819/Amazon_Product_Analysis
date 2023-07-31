@@ -7,6 +7,7 @@ from scipy.ndimage.measurements import label
 
 from GUI import men_window
 from GUI import women_window
+from GUI import kid_window
 
 def Home(notebook):
     mainFrame=Frame(notebook,bg='black')
@@ -32,6 +33,14 @@ def Women(notebook):
     notebook.add(womenFrame,text='Women')
     women=ttk.Notebook(womenFrame)
     women_window.WomenNotebook(women)
+
+
+def Kid(notebook):
+    kidFrame=Frame(notebook)
+    notebook.add(kidFrame,text='Kids')
+    kid=ttk.Notebook(kidFrame)
+    kid_window.MenNotebook(kid)
+
 
 def main():
     win=tk.Tk()
@@ -80,6 +89,7 @@ def main():
     Home(notebook)
     Men(notebook)
     Women(notebook)
+    Kid(notebook)
 
     win.mainloop()
 
