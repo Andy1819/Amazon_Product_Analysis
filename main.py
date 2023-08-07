@@ -22,8 +22,11 @@ def Home(notebook):
     label.image=image_tk
     image_label.pack(padx=0,pady=0)
 
+    para_label = tk.Label(mainFrame, text="\n\n\nThe analysis of different fashion and clothing products used by \nMen, Women, and Kids. The data encompasses a diverse range\n of fashion items, trends and preferences among different age\n groups and genders.\n\n~Anirudh D Verma~\n", font=("Courier", 24, "bold"), fg="gold", bg="black")
+    para_label.pack(pady=20)
+
 def Men(notebook):
-    menFrame=Frame(notebook,bg="black")
+    menFrame=Frame(notebook)
     notebook.add(menFrame,text='Men')
     men=ttk.Notebook(menFrame)
     men_window.MenNotebook(men)
@@ -39,7 +42,8 @@ def Kid(notebook):
     kidFrame=Frame(notebook)
     notebook.add(kidFrame,text='Kids')
     kid=ttk.Notebook(kidFrame)
-    kid_window.MenNotebook(kid)
+    kid_window.KidNotebook(kid)
+
 
 
 def main():
